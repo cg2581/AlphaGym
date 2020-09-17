@@ -25,7 +25,7 @@ class MainFragment : Fragment() {
 
         val asAccountSetting:AndroidSquares = view.findViewById(R.id.asAccountSetting)
         asAccountSetting.setOnClickListener{
-            Toast.makeText(activity,"Chức năng 1",Toast.LENGTH_SHORT).show()
+            Toast.makeText(activity,"Chức năng số 1",Toast.LENGTH_SHORT).show()
         }
 
         return view

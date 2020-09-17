@@ -37,7 +37,6 @@ class LoginFragment : Fragment() {
                         .commit()
                 }
             } else {
-
                 Toast.makeText(context, "Sai tài khoản hoặc mật khẩu!", Toast.LENGTH_SHORT).show()
             }
         }
