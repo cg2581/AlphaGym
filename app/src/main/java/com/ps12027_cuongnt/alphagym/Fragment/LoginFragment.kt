@@ -10,7 +10,6 @@ import android.widget.EditText
 import android.widget.Toast
 import com.ps12027_cuongnt.alphagym.R
 
-// TODO: Rename parameter arguments, choose names that match
 class LoginFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
