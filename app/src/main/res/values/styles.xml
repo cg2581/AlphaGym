@@ -1,0 +1,43 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="RedButton">
+        <item name="android:background">@drawable/red_button</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="SquareEditText">
+        <item name="android:background">@drawable/square_edittext</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="TopSpace">
+        <item name="android:background">@drawable/top_space</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="MidSpace">
+        <item name="android:background">@drawable/mid_space</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="MidSpace2">
+        <item name="android:background">@drawable/mid_space_2</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+</resources>

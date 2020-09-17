@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".Fragment.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@drawable/alphalogo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALPHA GYM"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtUsetname"
+                style="@style/SquareEditText"
+                android:drawableLeft="@drawable/user"
+                android:ems="10"
+                android:hint="Tài khoản"
+                android:inputType="textPersonName"
+                android:text="admin"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Gray" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/SquareEditText"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/password"
+                android:ems="10"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:text="admin"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Gray" />
+
+            <Button
+                android:layout_marginTop="5dp"
+                android:id="@+id/btnLogin"
+                style="@style/RedButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Đăng nhập" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
