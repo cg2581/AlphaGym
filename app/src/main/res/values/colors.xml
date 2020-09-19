@@ -6,4 +6,6 @@
     <color name="White">#FFFFFF</color>
     <color name="Black">#000000</color>
     <color name="Gray">#B8B3B3</color>
+    <color name="Facebook">#039BE5</color>
+    <color name="Google">#F4511E</color>
 </resources>

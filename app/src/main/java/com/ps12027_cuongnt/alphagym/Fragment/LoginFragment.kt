@@ -22,7 +22,7 @@ class LoginFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_login, container, false)
 
-        val edtUsername: EditText = view.findViewById(R.id.edtUsetname)
+        val edtUsername: EditText = view.findViewById(R.id.edtUsername)
         val edtPassword: EditText = view.findViewById(R.id.edtPassword)
         val btnLogin: Button = view.findViewById(R.id.btnLogin)
         btnLogin.setOnClickListener {

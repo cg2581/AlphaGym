@@ -26,13 +26,12 @@ class SplashActivity : AppCompatActivity() {
             AnimationUtils.loadAnimation(this, R.anim.logoscroll)
         clLogo?.startAnimation(animation)
 
-        val time: Long = 5000
         Handler().postDelayed(Runnable {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
 
             finish()
-        }, time)
+        }, 5000)
 
 
     }

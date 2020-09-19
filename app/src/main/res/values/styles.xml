@@ -7,19 +7,43 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="RedButton">
-        <item name="android:background">@drawable/red_button</item>
+    <style name="LoginButton">
+        <item name="android:background">@drawable/button_login</item>
         <item name="android:textColor">@color/White</item>
-        <item name="android:layout_marginLeft">10dp</item>
-        <item name="android:layout_marginRight">10dp</item>
         <item name="textAllCaps">false</item>
         <item name="android:textSize">24sp</item>
     </style>
 
-    <style name="SquareEditText">
-        <item name="android:background">@drawable/square_edittext</item>
+    <style name="FacebookLoginButton">
+        <item name="android:background">@drawable/button_facebooklogin</item>
         <item name="android:textColor">@color/White</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+    <style name="GoogleLoginButton">
+        <item name="android:background">@drawable/button_googlelogin</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="LoginTop">
+        <item name="android:background">@drawable/login_whiteboxtop</item>
         <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+    <style name="LoginBottom">
+        <item name="android:background">@drawable/login_whiteboxbottom</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="SquareEditText">
+        <item name="android:background">@drawable/edittext_square</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textColorHint">@color/Gray</item>
         <item name="android:textCursorDrawable">@null</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">48dp</item>
@@ -40,4 +64,8 @@
         <item name="android:layout_width">match_parent</item>
     </style>
 
+    <style name="WhiteBorderBox">
+        <item name="android:background">@drawable/whiteborderbox</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
 </resources>

@@ -100,7 +100,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/ivForeground"
             android:layout_width="170dp"
             android:layout_height="170dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -111,14 +111,14 @@
             app:srcCompat="@drawable/alphalogowhite" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/ivBackground"
             android:layout_width="160dp"
             android:layout_height="160dp"
-            app:layout_constraintBottom_toTopOf="@+id/imageView5"
-            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintBottom_toTopOf="@+id/ivForeground"
+            app:layout_constraintEnd_toStartOf="@+id/ivForeground"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/ivForeground"
+            app:layout_constraintTop_toBottomOf="@+id/ivForeground"
             app:srcCompat="@drawable/alphalogo" />
     </android.support.constraint.ConstraintLayout>
 
