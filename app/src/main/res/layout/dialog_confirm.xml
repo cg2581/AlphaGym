@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WhiteSmoke"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="Xoá"
+        android:textAlignment="center"
+        android:textColor="@color/DodgerBlue"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Bạn có chắc chắn muốn xoá?"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@color/DodgerBlue"
+                android:text="Hủy"
+                android:textAllCaps="false"
+                android:textColor="@color/WhiteSmoke" />
+
+            <Button
+                android:id="@+id/btnRemove"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@color/DodgerBlue"
+                android:text="Xoá"
+                android:textAllCaps="false"
+                android:textColor="@color/WhiteSmoke" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

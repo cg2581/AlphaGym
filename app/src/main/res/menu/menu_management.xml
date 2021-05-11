@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+        <item
+            android:enabled="false"
+            android:title="asd"></item>
+        <item
+            android:enabled="false"
+            android:title="asd"></item>
+        <item
+            android:enabled="false"
+            android:title="asd"></item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:iconTintMode="screen"
+            android:title="Chức năng"
+            app:showAsAction="always">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/product"
+                        android:icon="@drawable/alphalogo"
+                        android:title="Sản phẩm" />
+                    <item
+                        android:id="@+id/customer"
+                        android:icon="@drawable/account_setting"
+                        android:title="Khách hàng" />
+                    <item
+                        android:id="@+id/promotion"
+                        android:icon="@drawable/account_setting"
+                        android:title="Mã giảm giá" />
+                    <item
+                        android:id="@+id/invoice"
+                        android:icon="@drawable/account_setting"
+                        android:title="Hoá đơn" />
+                    <item
+                        android:id="@+id/statistic"
+                        android:icon="@drawable/account_setting"
+                        android:title="Thống kê" />
+                    <item
+                        android:id="@+id/employee"
+                        android:icon="@drawable/account_setting"
+                        android:title="Nhân viên" />
+                </group>
+            </menu>
+        </item>
+
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:iconTintMode="screen"
+            android:title="Tài khoản"
+            app:showAsAction="always">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/accountDetail"
+                        android:icon="@drawable/account_setting"
+                        android:title="Chi tiết tài khoản" />
+                    <item
+                        android:id="@+id/changePassword"
+                        android:icon="@drawable/account_setting"
+                        android:title="Đổi mật khẩu" />
+                    <item
+                        android:id="@+id/logout"
+                        android:icon="@drawable/account_setting"
+                        android:title="Đăng xuất" />
+                </group>
+            </menu>
+        </item>
+        <item android:title="Thông tin">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/policyPrivacy"
+                        android:icon="@drawable/account_setting"
+                        android:title="Chính sách bảo mật" />
+                    <item
+                        android:id="@+id/info"
+                        android:icon="@drawable/account_setting"
+                        android:title="Giới thiệu ứng dụng" />
+
+                    <item
+                        android:id="@+id/exit"
+                        android:icon="@drawable/account_setting"
+                        android:title="Thoát ứng dụng" />
+                </group>
+            </menu>
+        </item>
+
+
+    </group>
+</menu>

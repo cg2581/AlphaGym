@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/llBackground"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/actv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/White"
+            android:backgroundTint="@color/Transparent"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:hint="Tìm kiếm..."
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp"
+            android:singleLine="true"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/Gray"
+            android:textCursorDrawable="@null" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="@color/colorPrimary"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Huỷ" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:overScrollMode="never"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llBackground">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

@@ -3,39 +3,37 @@
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
         <item name="android:windowFullscreen">true</item>
+
+
+        <!--
+        <item name="fontFamily">@font/segoeui</item>
+        -->
     </style>
 
-    <style name="LoginButton">
-        <item name="android:background">@drawable/button_login</item>
+    <style name="ButtonLoginSquare">
+        <item name="android:background">@drawable/button_login_square</item>
         <item name="android:textColor">@color/White</item>
         <item name="textAllCaps">false</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="FacebookLoginButton">
-        <item name="android:background">@drawable/button_facebooklogin</item>
+    <style name="ButtonLoginRound">
+        <item name="android:background">@drawable/button_login_round</item>
         <item name="android:textColor">@color/White</item>
         <item name="textAllCaps">false</item>
-        <item name="android:textSize">24sp</item>
-    </style>
-    <style name="GoogleLoginButton">
-        <item name="android:background">@drawable/button_googlelogin</item>
-        <item name="android:textColor">@color/White</item>
-        <item name="textAllCaps">false</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="LoginTop">
-        <item name="android:background">@drawable/login_whiteboxtop</item>
-        <item name="android:paddingLeft">5dp</item>
-        <item name="android:paddingRight">5dp</item>
+        <item name="android:background">@drawable/box_round_top</item>
     </style>
+
     <style name="LoginBottom">
-        <item name="android:background">@drawable/login_whiteboxbottom</item>
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingRight">16dp</item>
+        <item name="android:background">@drawable/box_round_bottom</item>
     </style>
 
     <style name="SquareEditText">
@@ -49,13 +47,14 @@
         <item name="android:layout_height">48dp</item>
     </style>
 
-    <style name="TopSpace">
-        <item name="android:background">@drawable/top_space</item>
-        <item name="android:layout_width">match_parent</item>
-    </style>
 
     <style name="MidSpace">
         <item name="android:background">@drawable/mid_space</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="BoxTop">
+        <item name="android:background">@drawable/box_round_top</item>
         <item name="android:layout_width">match_parent</item>
     </style>
 
@@ -68,4 +67,111 @@
         <item name="android:background">@drawable/whiteborderbox</item>
         <item name="android:layout_width">match_parent</item>
     </style>
+
+    <style name="TextStyle">
+        <item name="fontFamily">@font/segoeuib</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="tabBackground">@color/colorPrimary</item>
+        <item name="tabIndicatorColor">@color/Transparent</item>
+        <item name="tabRippleColor">@color/Transparent      </item>
+        <item name="tabSelectedTextColor">@color/White</item>
+        <item name="tabTextColor">@color/Black</item>
+        <item name="tabIndicatorFullWidth">true</item>
+        <item name="tabTextAppearance">@style/TabLayoutTextAppearance</item>
+    </style>
+
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+    </style>
+
+    <style name="customFab">
+        <item name="background">@color/White</item>
+        <item name="android:textColor">@color/Black</item>
+
+    </style>
+
+    <style name="GalaxyZooThemeToolbarDarkOverflow" parent="Theme.AppCompat.NoActionBar">
+        <item name="background">@color/colorPrimary</item>
+        <item name="actionOverflowMenuStyle">@style/MyOverflowMenu</item>
+        <!-- android:textColorPrimary is the  color of the title text
+             in the Toolbar, in the Theme.AppCompat theme:  -->
+        <item name="android:textColorPrimary">@color/Black</item>
+        <!-- android:textColorPrimaryInverse is the  color of the title
+             text in the Toolbar, in the Theme.AppCompat.Light theme:  -->
+        <!-- <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item> -->
+
+        <!-- android:actionMenuTextColor is the color of the text of
+              action (menu_management) items in the Toolbar, at least in the
+              Theme.AppCompat theme.
+              For some reason, they already get the textColorPrimary
+              when running on API 21, but not on older versions of
+              Android, so this is only necessary to support older
+              Android versions.-->
+        <item name="actionMenuTextColor">@color/colorPrimaryDark</item>
+        <!-- android:textColorSecondary is the color of the menu_management
+             overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/White</item>
+
+        <!-- This would set the toolbar's background color,
+              but setting this also changes the popup menu_management's background,
+              even if we define popupTheme for our <Toolbar> -->
+        <!-- <item name="android:background">@color/color_primary</item> -->
+    </style>
+
+    <style name="MyOverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">4.0dip</item>
+        <item name="android:popupBackground">@color/White</item>
+
+
+    </style>
+
+    <style name="tvX">
+        <item name="backgroundTint">@color/Transparent</item>
+        <item name="android:textColor">@color/Gray</item>
+        <item name="android:gravity">top</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="edtX">
+        <item name="backgroundTint">@color/Transparent</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textColorHint">@color/Gray</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="closeIcon">@drawable/ic_baseline_cancel_24</item>
+        <item name="searchIcon">@drawable/ic_baseline_search_24</item>
+        <item name="searchHintIcon">@drawable/ic_baseline_search_24_white</item>
+        <item name="elevation">3dp</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+    </style>
+
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
 </resources>

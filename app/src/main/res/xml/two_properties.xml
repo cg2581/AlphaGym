@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition
+        motion:constraintSetEnd="@+id/X"
+        motion:constraintSetStart="@layout/fragment_menu"
+        motion:duration="2000">
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@+id/clContent"
+            motion:touchAnchorSide="middle" />
+    </Transition>
+    <ConstraintSet android:id="@+id/X">
+        <Constraint
+            android:id="@+id/clSticky"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:id="@+id/clContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@id/clSticky" />
+    </ConstraintSet>
+</MotionScene>
